@@ -1,0 +1,24 @@
+
+{
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "semi": false,
+  "tabWidth": 2,
+  "plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  "importOrder": [
+    "^vue",
+    "^@vueuse/.*",
+    "<THIRD_PARTY_MODULES>",
+    "^@/core/.*",
+    "^@/config/.*",
+    "^@/features/.*",
+    "^@/stores/.*",
+    "^@/components/common/.*",
+    "^@/components/modules/.*",
+    "^@/composables/.*",
+    "^@/utils/.*",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
