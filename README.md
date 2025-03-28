@@ -49,6 +49,7 @@ stores/modules/
 ```
 
 Si besoin :
+
 - Ajoute les tests dans `tests/unit/newsletter/`
 - Ajoute un endpoint dans `server/api/newsletter.post.ts`
 
@@ -56,18 +57,18 @@ Si besoin :
 
 ## 🔄 Recap : où mettre quoi ?
 
-| Besoin                                      | Emplacement                           |
-|---------------------------------------------|----------------------------------------|
-| 📊 Composant réutilisable                | `components/common/`                  |
-| 🔗 Composant lié à une feature          | `components/modules/maFeature/`       |
-| 🪛 Hook réutilisable (useXXX)           | `composables/`                        |
-| 🖊️ Type global ou config           | `core/types/` ou `core/config/`       |
-| 🔍 Format, validation, helper           | `utils/` (formatters/helpers/validators) |
-| 🏗þ Store Pinia                      | `stores/modules/`                     |
-| 🏢 Logic métier ou fonctionnelle        | `features/`                           |
-| 🌐 API back-end                        | `server/api/`                         |
-| 🔧 Middleware                         | `middleware/`                         |
-| 🗃 Test unit / intégration / e2e       | `tests/`                              |
+| Besoin                           | Emplacement                              |
+| -------------------------------- | ---------------------------------------- |
+| 📊 Composant réutilisable        | `components/common/`                     |
+| 🔗 Composant lié à une feature   | `components/modules/maFeature/`          |
+| 🪛 Hook réutilisable (useXXX)    | `composables/`                           |
+| 🖊️ Type global ou config         | `core/types/` ou `core/config/`          |
+| 🔍 Format, validation, helper    | `utils/` (formatters/helpers/validators) |
+| 🏗þ Store Pinia                  | `stores/modules/`                        |
+| 🏢 Logic métier ou fonctionnelle | `features/`                              |
+| 🌐 API back-end                  | `server/api/`                            |
+| 🔧 Middleware                    | `middleware/`                            |
+| 🗃 Test unit / intégration / e2e | `tests/`                                 |
 
 ---
 
@@ -91,9 +92,23 @@ Si besoin :
 ---
 
 ## 🎉 Ready to scale
+
 Cette structure est prête pour :
+
 - Des projets à long terme
 - Des équipes multiples
 - Une factorisation optimale des composants et logiques
 - Des tests, du SSR, du typage solide
 
+---
+
+## 🚀 Create a new project with NuxtForge
+
+```bash
+npx degit Cheick-ahmed/NuxtForge my-app
+cd my-app
+npm install
+npm dev
+
+
+```
